@@ -3,3 +3,19 @@
 #connect{
 	text-align: center;
 }
+
+#webD{
+	text-align: center;
+
+}
+
+#app{
+	border-bottom: 1px solid white;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+}
+
+#text{
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	line-height: 25px;
+}

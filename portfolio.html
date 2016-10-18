@@ -1,33 +1,86 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>	Portfolio</title>
+	<title>Viren Patel Portfolio</title>
+	<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cyborg/bootstrap.min.css" media="screen">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<script src="https://cdn.jsdelivr.net/jquery.typeit/4.2.3/typeit.min.js"></script>
+
+	<link href="assets/css/hover.css" rel="stylesheet" media="all">
 </head>
 
 <body>
 <div class="container">
 	<div class="row">
-		<nav class="navbar navbar-inverse">	
-			<div id="name">
-				<h1>Viren Patel</h1>
-		   </div>
+		<nav class="navbar navbar-inverse">
+			<div class="row">
+				<div class="col-md-12">
+					<div id="name">
+						<h2>Viren Patel</h2>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-12">
+					<div>
+						<h4 id="webD"></h4>
+					</div>
+				</div>
+			</div>
 		</nav>
 	</div>
 
 	<div class="row">
-		<div class="col-md-6">
-		<div class="jumbotron">
-			<div id="portfolio" class="row">
+	<div class="jumbotron">
+		<div class="row" id="portfolio">
 			<h1>Portfolio</h1>
+		</div>
+
+		<div class="row" id="app">
+			<div class="col-md-4">
+				<a href="https://stark-harbor-83694.herokuapp.com/" class="hvr-pulse-grow"><img src="assets/images/project2Logo.png" alt="TriviaWars"></a>
 			</div>
 
+			<div class="col-md-8">
+				<h5><br>A multiplayer game with elements of timed-trivia questions, Minesweeper, and Tetris Attack all in one!</h5>
+			</div>
+		</div>
+
+		<div class="row" id="app">
+			<div class="col-md-4">
+				<a href="https://secure-dawn-29944.herokuapp.com/" class="hvr-pulse-grow"><img src="assets/images/societyPin.png" alt="SocietyPin"></a>
+			</div>
+
+			<div class="col-md-8">
+				<h5><br>A web application that allows users to interact with the community by dropping a pin on a location and sharing information/pictures (example: advertise a yard sale, alert for a missing pet, etc…)</h5>
+			</div>
+		</div>
+
+		<div class="row" id="app">
+			<div class="col-md-4">
+				<a href="https://secure-ridge-16594.herokuapp.com/" class="hvr-pulse-grow"><img src="assets/images/hangman.gif" alt="Hangman"></a>
+			</div>
+
+			<div class="col-md-8">
+				<h5><br>A simple yet fun Hangman game! The theme is 'Movies'. Give it a go and see how you do!</h5>
+			</div>
+		</div>
+	</div>
+	</div>
+
+
+	<div class="row">
+		<div class="col-md-6">
+		<div class="jumbotron">
 			<div class="row">
-				<a href="https://stark-harbor-83694.herokuapp.com/" class=""><img src="assets/images/project2Logo.png" alt="TriviaWars"></a>
-				<a href="https://secure-ridge-16594.herokuapp.com/" class=""><img src="assets/images/hangman.gif" alt="Hangman"></a>
+				<h3>About Me:</h3>
+				<h5 id="text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The need to understand why and how everything works has always been a huge motivator for me throughout life. Becoming a developer not only satisfied this hunger for knowledge, but also gave me the tools to create wonderful and useful applications that I can share with the rest of the world.</h5>
 			</div>
 		</div>
 		</div>
@@ -35,7 +88,7 @@
 		<div class="col-md-6">
 		<div class="jumbotron">
 			<div id="connect" class="row">
-				<h2>Connect with Me</h2>
+				<h3>Connect with Me</h3>
 			</div>
 
 			<div class="row">
@@ -46,17 +99,43 @@
 				</div>
 			</div>
 
+			<div>
+				<h5>E-mail: virenpatel89@gmail.com</h5>
+			</div>
+
 		</div>
 		</div>
 	</div>
 
 	<div class="row">
-	<div class="jumbotron">
+	<nav class="navbar navbar-inverse">
 		<div class="col-md-12">
+			<p></p>
 			<p align="center">&copy; Copyright 2016 Viren Patel</p>
 		</div>
-	</div>
+	</nav>
 	</div>
 </div>
+
+<script type="text/javascript">
+	$('#webD').typeIt({
+		speed: 50
+	})
+	.tiPause(1000)
+	.tiType('Hello, there!')
+	.tiPause(500)
+	.tiType('!')
+	.tiPause(500)
+	.tiType('!')
+	.tiPause(1000)
+	.tiDelete(15)
+	.tiType('Welcome to my portfolio page!')
+	.tiPause(1500).tiBreak()
+	.tiType('Please have a look around :D')
+	.tiPause(3000)
+	.tiDelete(58)
+	.tiType('Web Developer');
+
+</script>
 </body>
 </html>
